@@ -1,0 +1,101 @@
+.Imagenes_edificio {
+    height: 370px;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.imagen_Boton_opcion {
+    height: 300px;
+    border-radius: 5px;
+}
+
+.imagen_boton_calculadora {
+    height: 280px;
+    border-radius: 5px;
+}
+
+.header {
+    background-color: rgb(215, 0, 0);
+}
+
+.body {
+    background-color: rgb(230, 230, 230);
+}
+
+h1, p, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head {
+    color: rgb(177, 5, 5);
+
+}
+
+li {
+    color: rgb(177, 5, 5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lista {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 175px;
+
+}
+
+.checkbox {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+.radio {
+    transform: scale(2);
+    cursor: pointer;
+    margin-bottom: 3px;
+    
+}
+
+.button :active {
+   background-color: rgb(255, 171, 171)
+}
+
+.button :hover {
+    background-color: rgb(214, 214, 214);
+}
+
+.button :focus {
+    background-color: rgb(255, 155, 155);
+}
+
+.button {
+    background-color: white;
+    border: 1px outset;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.tabla_solid{
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.imagen_boton_extras {
+    height: 220px;
+    border-radius: 5px;
+}
+
+.no_margin {
+    margin: 0px;
+}
+
+.head-op{
+    color: rgb(177, 5, 5);
+}
+
+.imagenes_deptos {
+    height: 370px;
+}
