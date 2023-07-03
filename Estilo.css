@@ -98,4 +98,15 @@ li {
 
 .imagenes_deptos {
     height: 370px;
+    border-radius: 5px;
+}
+
+.button_logo {
+    background-color: transparent;
+    border: none;
+}
+
+.mapa {
+    height: 400px;
+    border-radius: 5px;
 }
