@@ -5,7 +5,7 @@
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/Estilo.css">
-    <script type="text/javaScript" src="../../Script.js"></script>
+    <script type="text/javaScript" src="/Pagina principal/Calculadora/Script.js"></script>
 </head>
 <body class="body">
     <header class="header">
@@ -25,7 +25,8 @@
                      <label for="opcion1">
                      <h2 class="head">Opcion 1</h3>
                      <P><img src="/Pagina principal/Imagenes/Depto chico.png" alt="Opcion 1" Class="imagen_boton_calculadora"></P>
-                     <p>$105.000</p></label><p><input class="radio" type="radio" id="opcion1" name="opcion elegida" value="opcion1"></p>
+                     <p>$105.000</p>
+                    </label><p><input class="radio" type="radio" id="opcion elegida" name="opcion_elegida" value=105000 onclick="calcular_opciones(this.checked, this.name, this.value,)"></p>
                 </div>
                 </a>
             </button>
@@ -35,7 +36,7 @@
                          <label for="opcion2">
                         <h2 class="head">Opcion 2</h3>
                         <p><img src="/Pagina principal/Imagenes/Depto grande.png" alt="Opcion 2" Class="imagen_boton_calculadora"></p>
-                        <p>$135.000</p></label><p><input class="radio" type="radio" id="opcion2" name="opcion elegida" value="opcion2"></p>
+                        <p>$135.000</p></label><p><input class="radio" type="radio" id="opcion elegida" name="opcion_elegida" value=135000 onclick="calcular_opciones(this.checked, this.name, this.value,)"></p>
                     </div>
                 </a>
             </button>
@@ -44,7 +45,7 @@
                      <label for="opcion3">
                      <h2 class="head">Opcion 3</h3>
                      <p><img src="/Pagina principal/Imagenes/Depto muy grande.png" alt="Opcion 3" Class="imagen_boton_calculadora"></p>
-                     <p>$165.000</p></label><p><input class="radio" type="radio" id="opcion3"name="opcion elegida" value="opcion3" ></p>
+                     <p>$165.000</p></label><p><input class="radio" type="radio" id="opcion elegida" name="opcion_elegida" value=165000 onclick="calcular_opciones(this.checked, this.name, this.value,)"></p>
                 </div>
                 </a>
             </button>
@@ -65,7 +66,7 @@
                 <div>
                     <h2 class="head">Gimnasio</h3>
                     <P><img src="/Pagina principal/Imagenes/Gimnasio.jpg" alt="Gimnasio" Class="imagen_boton_extras"></P>
-                    <p>$4.000</p></label><p><input class="checkbox" type="checkbox" name="Gimnasio" value="opcion1"></p>
+                    <p>$4.000</p></label><p><input class="checkbox" type="checkbox" name="Gimnasio" value="4000" onclick="calcular_extras(this.name, this.checked, this.value)"></p>
                 </div>
                 
             </button>
@@ -73,7 +74,7 @@
                 <Div>
                     <h2 class="head">Quincho</h3>
                     <P><img src="/Pagina principal/Imagenes/Quincho.jpg" alt="Quincho" Class="imagen_boton_extras"></P>
-                    <p>$2.000</p></label><p><input class="checkbox" type="checkbox" name="Quincho" value="opcion1"></p>
+                    <p>$2.000</p></label><p><input class="checkbox" type="checkbox" name="Quincho" value="2000" onclick="calcular_extras(this.name, this.checked, this.value)"></p>
                 </Div>
                 
             </button>
@@ -81,7 +82,7 @@
                 <div>
                     <h2 class="head">Pileta</h3>
                     <P><img src="/Pagina principal/Imagenes/Pileta.jpg" alt="Pileta" Class="imagen_boton_extras"></P>
-                    <p>$3.000</p></label><p><input class="checkbox" type="checkbox" name="Pileta" value="opcion1"></p>
+                    <p>$3.000</p></label><p><input class="checkbox" type="checkbox" name="Pileta" value="3000" onclick="calcular_extras(this.name, this.checked, this.value,)"></p>
                 </div>
                 
             </button>
@@ -89,14 +90,14 @@
                 <div>
                     <h2 class="head">Canchas de tenis</h3>
                     <P><img src="/Pagina principal/Imagenes/tenis.jpg" alt="Pileta" Class="imagen_boton_extras"></P>
-                    <p>$3.000</p></label><p><input class="checkbox" type="checkbox" name="Pileta" value="opcion1"></p>
+                    <p>$3.000</p></label><p><input class="checkbox" type="checkbox" name="Cancha_tenis" value="3000" onclick="calcular_extras(this.name, this.checked, this.value,)"></p>
                 </div>
                 
             </button>
         </div>
         <div>
-            <button class="button" type="button" onclick="calcular()"><h2 class="head">Calcular</h2></button> 
-            <h3>Total:</h3>
+            <button class="button" type="button" onclick="calcular_total()"><h2 class="head">Calcular</h2></button> 
+            <p id="total"></p>
         </div>
 
     </form>
