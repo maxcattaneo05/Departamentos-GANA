@@ -9,7 +9,7 @@ let arrayOpciones = [];
 
 let calcular_opciones = (checkeado, nombre, valor) =>{
     if(checkeado) {
-        opcion_precio=Number(valor)
+        opcion_precio= Number(valor)
         opcion_nombre= (nombre)
     }
 console.log(opcion_precio)
