@@ -31,23 +31,23 @@ let calcular_extras = (nombre, checkeado, valor) => {
 function calcular_total (){
     if(opcion_precio == 0) {
         console.log("Debe elegir una opcion")
-        document.getElementById("texto_error").innerHTML="⚠️ Debe elegir una opcion de departamento ⚠️"
+        document.getElementById("texto_error").innerHTML="⚠️ Debe elegir una opción de departamento ⚠️"
     } else{
         precio_total= opcion_precio + expensas + servicios_extra
         
-        console.log("Opcion elegida:"+opcion_nombre+":$"+opcion_precio);
+        console.log("Opción elegida:"+opcion_nombre+":$"+opcion_precio);
         console.log("Extras elegidos:"+arrayOpciones+":$"+servicios_extra);
         console.log("Expensas:$"+expensas);
         console.log("Total:$"+precio_total);
         document.getElementById("texto_error").innerHTML=""
-        document.getElementById("texto_opcion").innerHTML="Opcion elegida: "
+        document.getElementById("texto_opcion").innerHTML="Opción elegida: "
         document.getElementById("texto_expensas").innerHTML="Extras elegidos: "
         document.getElementById("texto_extras").innerHTML="Expensas: "
         document.getElementById("texto_").innerHTML="Total:"
         document.getElementById("total_opcion").innerHTML=opcion_nombre+": $"+opcion_precio;
         document.getElementById("total_expensas").innerHTML=arrayOpciones+": $"+servicios_extra;
         document.getElementById("total_extras").innerHTML="$"+expensas;
-        document.getElementById("total_").innerHTML="$"+precio_total;
+        document.getElementById("total_").innerHTML="$"+precio_total+" por mes"
 
     }
 }

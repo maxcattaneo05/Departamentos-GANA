@@ -81,7 +81,14 @@ li {
     border: 1px solid;
     border-radius: 5px;
     background-color: white;
-    width: 95%;
+    width: auto;
+}
+
+.tabla_mapa{
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+    width: 90%;
 }
 
 .imagen_boton_extras {
@@ -100,6 +107,7 @@ li {
 .imagenes_deptos {
     height: 370px;
     border-radius: 5px;
+    width: auto;
 }
 
 .button_logo {
