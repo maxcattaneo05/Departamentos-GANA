@@ -101,6 +101,7 @@ li {
 }
 
 .head-op{
+    text-decoration: none;
     color: rgb(177, 5, 5);
 }
 
